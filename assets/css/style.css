@@ -1,3 +1,31 @@
-.container{
-	background-color: yellow;
+body{
+	align-content: center;
+	color: white;
+}
+h1{
+	background-color: orange;
+	margin: 10px;
+}
+
+#rules{
+	background-color: tan; 
+	margin: 10px;
+
+}
+
+#ranNum{
+	background-color: green;
+	margin: 10px;
+
+}
+
+.wl{
+	background-color: blue;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.total{
+	background-color: purple;
+	margin: 10px;
 }
