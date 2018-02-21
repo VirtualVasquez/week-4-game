@@ -1,31 +1,51 @@
 body{
 	align-content: center;
 	color: white;
+	background-image: url("../../assets/images/squares.png");
 }
 h1{
-	background-color: orange;
+	background-color: ;
 	margin: 10px;
-}
+	text-shadow: 2px 2px blue;
+	color: yellow;
+	font-weight: bold;
+	font-size: 54px;
+}	
 
 #rules{
-	background-color: tan; 
 	margin: 10px;
-
+	text-shadow: 1px 1px black;
+	font-size: 16px;
 }
 
-#ranNum{
-	background-color: green;
+#ranNum, #yourNumber{
+	font-weight: bold;
+	font-size: 36px;
 	margin: 10px;
-
+	text-shadow: 2px 2px black;
 }
 
-.wl{
-	background-color: blue;
+#yourNumber{
+	color: yellow;
+}
+
+.wl, .wl-label{
+	font-size: 20px;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	text-shadow: 2px 2px black;
+}
+
+.wl-label{
+	color: yellow;
 }
 
 .total{
-	background-color: purple;
+	font-size: 36px;
 	margin: 10px;
+	text-shadow: 2px 2px black;
+}
+
+#yourTotal{
+	color: yellow;
 }
