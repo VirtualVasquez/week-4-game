@@ -14,64 +14,56 @@
 
 <div class="container">
 
-	<header>
-		<div class="row">
-			<div class="col-xs-12 text-center">
-				<h1 class="container col-xs-8">Crystal Collector!</h1>
-			</div>
-		</div>
+	<header class="text-center">
+		<h1>Emerald Escalation</h1>
 	</header>	
 
 		
-		<div class="row">
-			<img class ="col-xs-2" src="assets/images/sonic.png"> 
-			<div id="rules" class="col-xs-4 text-center">
-				<p>You will be given a random number at the start of the game.</p>
-				<p>There are four crystals below. By clicking on a crystal you will add a specifc amount of points to your total score.</p>
-				<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
-				<p>The value of each crystal is hidden from you until you click on it</p>
-				<p>Each time when the game starts, the game will change the values of each crystal</p>
-			</div>
-			<img class ="col-xs-2" src="assets/images/knuckles.png"> 
+	<div class="row" id="exp">
+		<div class="col-xs-3">
+			<img src="assets/images/sonic.png"> 
+		</div>
+			
+		<div id="rules" class="col-xs-6">
+			<p>You will be given a random number at the start of the game.</p>
+			<p>There are four crystals below. By clicking on a crystal you will add a specifc amount of points to your total score.</p>
+			<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+			<p>The value of each crystal is hidden from you until you click on it</p>
+			<p>Each time when the game starts, the game will change the values of each crystal</p>
 		</div>
 		
+		<div class="col-xs-3">
+			<img src="assets/images/knuckles.png">
+		</div> 
+	</div>
+		
 		<div class="row">
-			<div class="col-xs-3 text-center" id="yourNumber">
-				Your Number:
+			<div class="col-xs-6 text-center">
+				<p id="yourNumber"></p>
 			</div>
 
-			<div class="col-xs-3 text-center" id="ranNum">
+			<div class="col-xs-6 text-center wl-label">
+				<p id="wins"></p>
+				<p id="losses"></p>
 			</div>
 
-			<div class="col-xs-1 wl-label">
-				<p >Wins:</p>
-				<p>Losses:</p>
-			</div>
 
-			<div class="col-xs-1 wl">
-				<p id="wins">0</p>
-				<p id="losses">0</p>
-			</div>
 		</div>
 
 		<div class="row">
-			<img id="green" class ="col-xs-2 crystal" value="0" src="assets/images/green.png">
-			<img id="red" class ="col-xs-2 crystal" value="0" src="assets/images/red.png">
-			<img id="blue" class ="col-xs-2 crystal" value="0" src="assets/images/blue.png">
-			<img id="yellow" class ="col-xs-2 crystal" value="0" src="assets/images/yellow.png">
+			<img id="green" class ="col-xs-3 crystal" value="0" src="assets/images/green.png">
+			<img id="red" class ="col-xs-3 crystal" value="0" src="assets/images/red.png">
+			<img id="blue" class ="col-xs-3 crystal" value="0" src="assets/images/blue.png">
+			<img id="yellow" class ="col-xs-3 crystal" value="0" src="assets/images/yellow.png">
 		</div>
 
 		<div class="row">
-			<div class="col-xs-8 text-center total" id="yourTotal">
-				Your total score is:
+			<div class="col-xs-12 text-center yellow" id="yourTotal">
+				<p>Your total score is:</p>
+				<p id="score"></p>
 			</div>
 		</div>
 
-		<div class="row">
-			<div class="col-xs-8 text-center total" id="score">
-				0
-			</div>
-		</div>
 
 </div>
 
