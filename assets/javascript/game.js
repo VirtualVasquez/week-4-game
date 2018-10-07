@@ -21,8 +21,11 @@ function newGame()
 	// on load, random number generated between 19-120
 
     	ranNum = 19 + Math.floor(Math.random() * 101);
-        $('#ranNum').text(ranNum);
-        console.log(ranNum);
+        $('#yourNumber').empty();
+        $('#yourNumber').append("Your Number: " + ranNum);
+        console.log("Random: " + ranNum);
+
+
 
 	//on load, random number assigned from 1-12 to each crystal
 	//for the duration of the game
@@ -52,10 +55,18 @@ function newGame()
         score = 0;
         $('#score').text(score);
 }
+
+function restock() {
+	$('#wins').empty();
+	$('#losses').empty();								
+    $('#wins').append("Wins: " + wins);
+    $('#losses').append("Losses: " + losses);	
+}
 //MAIN PROCESS
 //============================================================
 $(document).ready(function() 
 {
+	restock();
 	newGame();
 
 	//on click, crystals will add unknown assigned No. to score
@@ -64,18 +75,23 @@ $(document).ready(function()
 		{
 			var onClick = parseInt($(this).val());
 			score = score + onClick;
-			$('#score').text(score);
+			$('#score').empty();
+			$('#score').append(score);
 			console.log(score);
 			if (score === ranNum) 
 			{	
+				console.log("win");
 				wins = wins + 1;
-				$('#wins').text(wins);
+				restock()	
 				newGame();
 			}
 			else if (score > ranNum)
 			{
+				console.log("loss");
 				losses = losses + 1;
-				$('#losses').text(losses);
+				$('#losses').empty();
+				$('#wins').empty();
+				restock();				
 				newGame();
 			}
 

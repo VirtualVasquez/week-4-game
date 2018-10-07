@@ -4,48 +4,34 @@ body{
 	background-image: url("../../assets/images/squares.png");
 }
 h1{
-	background-color: ;
-	margin: 10px;
 	text-shadow: 2px 2px blue;
-	color: yellow;
 	font-weight: bold;
 	font-size: 54px;
 }	
 
 #rules{
-	margin: 10px;
 	text-shadow: 1px 1px black;
-	font-size: 16px;
+	font-size: 20px;
 }
 
-#ranNum, #yourNumber{
+#ranNum, #yourNumber, #yourTotal{
 	font-weight: bold;
 	font-size: 36px;
-	margin: 10px;
 	text-shadow: 2px 2px black;
 }
 
-#yourNumber{
-	color: yellow;
-}
 
 .wl, .wl-label{
 	font-size: 20px;
-	margin-top: 10px;
-	margin-bottom: 10px;
 	text-shadow: 2px 2px black;
 }
 
-.wl-label{
+.wl-label, #yourTotal, #yourNumber, h1{
 	color: yellow;
 }
 
 .total{
 	font-size: 36px;
-	margin: 10px;
 	text-shadow: 2px 2px black;
 }
 
-#yourTotal{
-	color: yellow;
-}
