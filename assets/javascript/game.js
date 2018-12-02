@@ -9,7 +9,6 @@ var green = 0;
 var red = 0;
 var blue = 0;
 var yellow = 0;
-
 //FUNCTIONS
 //====================================================================================
 
@@ -76,11 +75,13 @@ $(document).ready(function()
 			score = score + onClick;
 			$('#score').empty();
 			$('#score').append("Current Number: " +score);
+			$('audio#ring')[0].play();			
 			console.log(score);
 			if (score === ranNum) 
 			{	
 				console.log("win");
 				wins = wins + 1;
+				$('audio#win')[0].play();
 				restock()	
 				newGame();
 			}
@@ -88,6 +89,7 @@ $(document).ready(function()
 			{
 				console.log("loss");
 				losses = losses + 1;
+				$('audio#lose')[0].play();
 				$('#losses').empty();
 				$('#wins').empty();
 				restock();				

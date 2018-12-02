@@ -13,7 +13,10 @@
 <body>
 
 <div class="container">
-
+	<audio autoplay>
+		<source src="assets/sounds/bgm.mp3" type="audio/mp3">
+				Your browser does not support the audio tag.
+	</audio>
 	<header class="col-xs-12">
 		<h1>Emerald Escalation</h1>
 	</header>	
@@ -34,7 +37,16 @@
 	</div>
 		
 
-		<div class="row">
+		<div class="row"> 
+			<audio id="ring">
+				<source src="assets/sounds/ring.mp3" type="audio/mp3">
+			</audio>
+			<audio id="win">
+				<source src="assets/sounds/win.mp3" type="audio/mp3">
+			</audio>
+			<audio id="lose">
+				<source src="assets/sounds/lose.mp3" type="audio/mp3">
+			</audio>
 			<img id="green" class ="col-xs-3 col-md-2 col-md-offset-2 crystal" value="0" src="assets/images/green.png">
 			<img id="red" class ="col-xs-3 col-md-2 crystal" value="0" src="assets/images/red.png">
 			<img id="blue" class ="col-xs-3 col-md-2 crystal" value="0" src="assets/images/blue.png">
