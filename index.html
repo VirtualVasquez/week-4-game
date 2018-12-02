@@ -14,53 +14,51 @@
 
 <div class="container">
 
-	<header class="text-center">
+	<header class="col-xs-12">
 		<h1>Emerald Escalation</h1>
 	</header>	
 
 		
 	<div class="row" id="exp">
-		<div class="col-xs-3">
-			<img src="assets/images/sonic.png"> 
+		<div class="col-xs-3 col-md-2 col-md-offset-2">
+			<img src="assets/images/sonic.png">
 		</div>
 			
-		<div id="rules" class="col-xs-6">
-			<p>You will be given a random number at the start of the game.</p>
-			<p>There are four crystals below. By clicking on a crystal you will add a specifc amount of points to your total score.</p>
-			<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
-			<p>The value of each crystal is hidden from you until you click on it</p>
-			<p>Each time when the game starts, the game will change the values of each crystal</p>
+		<div id="rules" class="col-xs-6 col-md-4">
+			<h3>Click on the Emeralds until you're number matches the Target Number, but don't go over!</h3>
 		</div>
 		
-		<div class="col-xs-3">
+		<div class="col-xs-3 col-md-2">
 			<img src="assets/images/knuckles.png">
 		</div> 
 	</div>
 		
+
 		<div class="row">
-			<div class="col-xs-6 text-center">
-				<p id="yourNumber"></p>
+			<img id="green" class ="col-xs-3 col-md-2 col-md-offset-2 crystal" value="0" src="assets/images/green.png">
+			<img id="red" class ="col-xs-3 col-md-2 crystal" value="0" src="assets/images/red.png">
+			<img id="blue" class ="col-xs-3 col-md-2 crystal" value="0" src="assets/images/blue.png">
+			<img id="yellow" class ="col-xs-3 col-md-2 crystal" value="0" src="assets/images/yellow.png">
+		</div>
+
+		<div class="row">
+			<div class="col-xs-6 col-md-4 col-md-offset-2 text-center">
+				<h3 id="yourNumber"></h3>
 			</div>
 
-			<div class="col-xs-6 text-center wl-label">
-				<p id="wins"></p>
-				<p id="losses"></p>
+			<div class="col-xs-6 col-md-4 text-center">
+				<h3 id="score"></h3>
 			</div>
 
 
 		</div>
 
 		<div class="row">
-			<img id="green" class ="col-xs-3 crystal" value="0" src="assets/images/green.png">
-			<img id="red" class ="col-xs-3 crystal" value="0" src="assets/images/red.png">
-			<img id="blue" class ="col-xs-3 crystal" value="0" src="assets/images/blue.png">
-			<img id="yellow" class ="col-xs-3 crystal" value="0" src="assets/images/yellow.png">
-		</div>
-
-		<div class="row">
-			<div class="col-xs-12 text-center yellow" id="yourTotal">
-				<p>Your total score is:</p>
-				<p id="score"></p>
+			<div class="col-xs-6 col-md-4 col-md-offset-2 wl-label">
+				<h4 id="wins"></h4>
+			</div>
+			<div class="col-xs-6 col-md-4 wl-label">
+				<h4 id="losses"></h4>
 			</div>
 		</div>
 

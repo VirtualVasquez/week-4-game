@@ -22,8 +22,7 @@ function newGame()
 
     	ranNum = 19 + Math.floor(Math.random() * 101);
         $('#yourNumber').empty();
-        $('#yourNumber').append("Your Number: " + ranNum);
-        console.log("Random: " + ranNum);
+        $('#yourNumber').append("Random Number: " + ranNum);
 
 
 
@@ -53,7 +52,7 @@ function newGame()
         console.log(Number($('#yellow').val()));
 
         score = 0;
-        $('#score').text(score);
+        $('#score').text("Current Number: " +score);
 }
 
 function restock() {
@@ -76,7 +75,7 @@ $(document).ready(function()
 			var onClick = parseInt($(this).val());
 			score = score + onClick;
 			$('#score').empty();
-			$('#score').append(score);
+			$('#score').append("Current Number: " +score);
 			console.log(score);
 			if (score === ranNum) 
 			{	

@@ -2,36 +2,36 @@ body{
 	align-content: center;
 	color: white;
 	background-image: url("../../assets/images/squares.png");
+
 }
-h1{
-	text-shadow: 2px 2px blue;
-	font-weight: bold;
-	font-size: 54px;
-}	
+h1,h2,h3,h4{
+	text-align:center;
+}
 
 #rules{
 	text-shadow: 1px 1px black;
-	font-size: 20px;
-}
-
-#ranNum, #yourNumber, #yourTotal{
-	font-weight: bold;
-	font-size: 36px;
-	text-shadow: 2px 2px black;
 }
 
 
-.wl, .wl-label{
-	font-size: 20px;
-	text-shadow: 2px 2px black;
-}
-
-.wl-label, #yourTotal, #yourNumber, h1{
+.wl-label, #yourTotal, #yourNumber, #score, h1{
 	color: yellow;
-}
-
-.total{
-	font-size: 36px;
 	text-shadow: 2px 2px black;
+	font-weight: bold;
 }
 
+img{
+	width: 100%;
+	height: auto;
+}
+
+@media only screen and (min-width: 574px) {
+	#rules h3{
+		height: 50%;
+		margin-top: 25%;
+	}
+}
+@media only screen and (max-width: 573px) {
+	#rules h3{
+		margin-top: 0;
+	}
+}
